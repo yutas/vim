@@ -1,0 +1,14 @@
+#!/bin/sh
+ctags -f ~/.vim/mytags/$1 \
+--langmap=php:.php.module.install.inc.engine -R \
+--exclude="\.svn" \
+--exclude="\.git" \
+--exclude="*\.js" \
+--totals=yes \
+--tag-relative=yes \
+--PHP-kinds=+cf \
+--fields=+iaSs \
+--extra=+q \
+--regex-PHP='/abstract\s+class\s+([^ ]+)/\1/c/' \
+--regex-PHP='/interface\s+([^ ]+)/\1/c/' \
+--regex-PHP='/(public\s+|static\s+|abstract\s+|protected\s+|private\s+)function\s+\&?\s*([^ (]+)/\2/f/'

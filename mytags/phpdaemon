@@ -1,0 +1,174 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Application_Base	../../../www/phpdaemon/Application_Base.php	/^abstract class Application_Base$/;"	c
+Application_Base_DB	../../../www/phpdaemon/Application_Base_DB.php	/^class Application_Base_DB extends Application_Base$/;"	c
+Application_Example	../../../www/phpdaemon/Application_Example.php	/^class Application_Example extends Application_Base$/;"	c
+CONFIG_DIR	../../../www/phpdaemon/Application_Example.php	/^define('CONFIG_DIR','\/www\/api\/applications\/b2b\/config\/');$/;"	d
+Daemon	../../../www/phpdaemon/Daemon.php	/^class Daemon$/;"	c
+Thread	../../../www/phpdaemon/Thread.php	/^abstract class Thread$/;"	c
+Thread_Child	../../../www/phpdaemon/Thread_Child.php	/^class Thread_Child extends Thread$/;"	c
+Thread_Collection	../../../www/phpdaemon/Thread_Collection.php	/^class Thread_Collection$/;"	c
+Thread_Master	../../../www/phpdaemon/Thread_Master.php	/^class Thread_Master extends Thread$/;"	c
+__clone	../../../www/phpdaemon/Application_Base.php	/^    public function  __clone(){}$/;"	f
+__construct	../../../www/phpdaemon/Application_Base.php	/^    public function  __construct(){}$/;"	f
+_after_function	../../../www/phpdaemon/Application_Base.php	/^        $_after_function = $_after_function ? array($appl,$_after_function) : FALSE;$/;"	v
+_before_function	../../../www/phpdaemon/Application_Base.php	/^        $_before_function = $_before_function ? array($appl,$_before_function) : FALSE;$/;"	v
+_runtime_function	../../../www/phpdaemon/Application_Base.php	/^        $_runtime_function = $_runtime_function ? array($appl,$_runtime_function) : FALSE;$/;"	v
+after_function	../../../www/phpdaemon/Thread_Child.php	/^            $this->after_function = $_function;$/;"	v
+after_function	../../../www/phpdaemon/Thread_Child.php	/^    protected $after_function = FALSE;$/;"	v
+after_runtime	../../../www/phpdaemon/Application_Base.php	/^    public function after_runtime(){}$/;"	f
+appl	../../../www/phpdaemon/Application_Base.php	/^        $appl = clone $this;$/;"	v
+appl	../../../www/phpdaemon/Daemon.php	/^    protected static $appl = FALSE;                     \/\/выполняемое приложение$/;"	v
+appl	../../../www/phpdaemon/Thread.php	/^    protected $appl = FALSE;                            \/\/выполняемое приложение$/;"	v
+appl	../../../www/phpdaemon/Thread_Child.php	/^        $this->appl = clone $appl;$/;"	v
+appl	../../../www/phpdaemon/Thread_Master.php	/^        $this->appl = clone $_appl;$/;"	v
+appl	../../../www/phpdaemon/phpd.php	/^$appl = new Application_Example();$/;"	v
+apply_args	../../../www/phpdaemon/Daemon.php	/^    public static function apply_args($_args)$/;"	f
+apply_settings	../../../www/phpdaemon/Application_Base.php	/^    public function apply_settings($_settings)$/;"	f
+args	../../../www/phpdaemon/Daemon.php	/^    protected static $args = array('daemon' => array(),'appl' => array());  \/\/параметры, передаваемые демону в командной строке или в методе Daemon::init()$/;"	v
+backsig	../../../www/phpdaemon/Thread.php	/^    public function backsig($sig)$/;"	f
+before_function	../../../www/phpdaemon/Thread_Child.php	/^            $this->before_function = $_function;$/;"	v
+before_function	../../../www/phpdaemon/Thread_Child.php	/^    protected $before_function = FALSE;$/;"	v
+before_runtime	../../../www/phpdaemon/Application_Base.php	/^    public function before_runtime(){}$/;"	f
+child_before_action	../../../www/phpdaemon/Application_Example.php	/^	public function child_before_action()$/;"	f
+child_collection	../../../www/phpdaemon/Thread_Master.php	/^            $this->child_collection = new Thread_Collection();          \/\/создаем коллекцию для дочерних процессов$/;"	v
+child_collection	../../../www/phpdaemon/Thread_Master.php	/^    protected $child_collection;            \/\/коллекция дочерних процессов$/;"	v
+child_count	../../../www/phpdaemon/Thread_Master.php	/^    protected $child_count = 0;             \/\/текущее количество подпроцессов (детей)$/;"	v
+child_main_action	../../../www/phpdaemon/Application_Example.php	/^	public function child_main_action()$/;"	f
+counter	../../../www/phpdaemon/Application_Example.php	/^	private $counter = 0;$/;"	v
+daemon_name	../../../www/phpdaemon/Daemon.php	/^    public static $daemon_name = FALSE;                 \/\/имя демона, которое определяет имя лог-файла: "<имя демона>.log"$/;"	v
+db	../../../www/phpdaemon/Application_Base_DB.php	/^        $this->db = new mysqli($this->db_config['host'],$this->db_config['user'],$this->db_config['password'],$this->db_config['database']);$/;"	v
+db	../../../www/phpdaemon/Application_Base_DB.php	/^    protected $db;                          \/\/соединение с БД (mysqli)$/;"	v
+db_call_sp	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_call_sp($sql)$/;"	f
+db_close	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_close()$/;"	f
+db_config	../../../www/phpdaemon/Application_Base_DB.php	/^        $this->db_config = $_db_config;$/;"	v
+db_config	../../../www/phpdaemon/Application_Base_DB.php	/^    protected $db_config = array();$/;"	v
+db_connect	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_connect()$/;"	f
+db_errno	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_errno()$/;"	f
+db_error	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_error()$/;"	f
+db_fetch	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_fetch($result)$/;"	f
+db_ping	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_ping()$/;"	f
+db_query	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_query($query)$/;"	f
+db_real_escape_string	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_real_escape_string($_string)$/;"	f
+db_thread_id	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function db_thread_id()$/;"	f
+delete_spawn	../../../www/phpdaemon/Thread_Collection.php	/^	public function delete_spawn($_spawn_id)$/;"	f
+fetch_all	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function fetch_all($res)$/;"	f
+getNumber	../../../www/phpdaemon/Thread_Collection.php	/^    public function getNumber()$/;"	f
+get_args	../../../www/phpdaemon/Daemon.php	/^    public static function get_args($args)$/;"	f
+get_pid	../../../www/phpdaemon/Daemon.php	/^    public static function get_pid()$/;"	f
+i	../../../www/phpdaemon/Daemon.php	/^            $i = 1;$/;"	v
+i	../../../www/phpdaemon/Daemon.php	/^            $i = 2;$/;"	v
+il	../../../www/phpdaemon/Daemon.php	/^            $il = sizeof($args)+1;$/;"	v
+il	../../../www/phpdaemon/Daemon.php	/^            $il = sizeof($args);$/;"	v
+init	../../../www/phpdaemon/Daemon.php	/^    public static function init($_settings)$/;"	f
+jl	../../../www/phpdaemon/Daemon.php	/^                for ($j = 0, $jl = strlen($match[1]); $j < $jl; ++$j) {$/;"	v
+k	../../../www/phpdaemon/Thread_Master.php	/^            foreach($this->child_collection->threads as $k => & $t) {$/;"	v
+key	../../../www/phpdaemon/Daemon.php	/^                    $key = $match[1] {$/;"	v
+key	../../../www/phpdaemon/Daemon.php	/^                $key = preg_replace('~[^a-z0-9]+~', '', $parts[0]);$/;"	v
+last_arg	../../../www/phpdaemon/Daemon.php	/^                $last_arg = $key;$/;"	v
+last_arg	../../../www/phpdaemon/Daemon.php	/^        $last_arg = NULL;$/;"	v
+log	../../../www/phpdaemon/Application_Base.php	/^    public static function log($_msg,$_verbose = 1)$/;"	f
+log	../../../www/phpdaemon/Daemon.php	/^    public static function log($_msg,$_verbose = 1,$_to_stderr = FALSE)$/;"	f
+log	../../../www/phpdaemon/Thread.php	/^    public function log($_msg,$_verbose = 1)$/;"	f
+log_with_sender	../../../www/phpdaemon/Daemon.php	/^    public static function log_with_sender($_msg,$_sender = 'nobody',$_to_stderr = FALSE)$/;"	f
+logpointer	../../../www/phpdaemon/Daemon.php	/^    protected static $logpointer;                       \/\/указатель на файл логов$/;"	v
+master	../../../www/phpdaemon/Daemon.php	/^    protected static $master;                           \/\/класс главного процесса$/;"	v
+master_runtime	../../../www/phpdaemon/Application_Base.php	/^    public function master_runtime(){}$/;"	f
+master_runtime	../../../www/phpdaemon/Application_Example.php	/^	public function master_runtime()$/;"	f
+master_thread	../../../www/phpdaemon/Application_Base.php	/^        $this->master_thread = $master;$/;"	v
+master_thread	../../../www/phpdaemon/Application_Base.php	/^    private $master_thread = FALSE;$/;"	v
+mt	../../../www/phpdaemon/Daemon.php	/^        $mt = explode(' ', microtime());$/;"	v
+nano	../../../www/phpdaemon/Thread.php	/^    public function sigwait($sec = 0, $nano = 1)$/;"	v
+no	../../../www/phpdaemon/Thread.php	/^            foreach(Thread::$signals as $no => $name) {$/;"	v
+no	../../../www/phpdaemon/Thread_Master.php	/^            foreach(Thread::$signals as $no => $name) {                 \/\/задаем обработчики системных сигналов$/;"	v
+ok	../../../www/phpdaemon/Daemon.php	/^        $ok = self::$pid && posix_kill(self::$pid, $mode === 3 ? SIGINT : SIGTERM);$/;"	v
+onShutdown	../../../www/phpdaemon/Thread_Master.php	/^    public function onShutdown()$/;"	f
+open_logs	../../../www/phpdaemon/Daemon.php	/^    public static function open_logs()$/;"	f
+out	../../../www/phpdaemon/Daemon.php	/^        $out = array('daemon' => array(),'appl' => array());$/;"	v
+parts	../../../www/phpdaemon/Daemon.php	/^                $parts = explode('=', $match[1]);$/;"	v
+pcntl_sigtimedwait	../../../www/phpdaemon/Thread.php	/^    function pcntl_sigtimedwait($signals, $siginfo, $sec, $nano)$/;"	f
+pid	../../../www/phpdaemon/Daemon.php	/^    public static $pid;$/;"	v
+pid	../../../www/phpdaemon/Thread.php	/^            $this->pid = posix_getpid();$/;"	v
+pid	../../../www/phpdaemon/Thread.php	/^        $pid = pcntl_fork();$/;"	v
+pid	../../../www/phpdaemon/Thread.php	/^        $this->pid = $pid;$/;"	v
+pid	../../../www/phpdaemon/Thread.php	/^    public $pid;$/;"	v
+pid	../../../www/phpdaemon/Thread_Master.php	/^            $pid = $thread->start();$/;"	v
+pid	../../../www/phpdaemon/Thread_Master.php	/^            $pid = 0;$/;"	v
+pid	../../../www/phpdaemon/Thread_Master.php	/^            $pid = pcntl_fork();                    \/\/форкаем текущий процесс$/;"	v
+pid	../../../www/phpdaemon/Thread_Master.php	/^            $this->pid = posix_getpid();    \/\/инициализируем pid нового процесса$/;"	v
+pid	../../../www/phpdaemon/Thread_Master.php	/^        $pid = pcntl_waitpid(-1, $status, WNOHANG);$/;"	v
+pid	../../../www/phpdaemon/Thread_Master.php	/^        $this->pid = $pid;$/;"	v
+pidfile	../../../www/phpdaemon/Daemon.php	/^    public static $pidfile;$/;"	v
+priority	../../../www/phpdaemon/Thread.php	/^    protected $priority = 4;                            \/\/приоритет процесса в ОС$/;"	v
+priority	../../../www/phpdaemon/Thread_Child.php	/^    protected $priority = 4;$/;"	v
+priority	../../../www/phpdaemon/Thread_Master.php	/^    protected $priority = 100;              \/\/приоритет процесса$/;"	v
+push	../../../www/phpdaemon/Thread_Collection.php	/^    public function push($thread)$/;"	f
+reconnect	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function reconnect()$/;"	f
+reconnect_attemts	../../../www/phpdaemon/Application_Base_DB.php	/^                $this->reconnect_attemts = 10;$/;"	v
+reconnect_attemts	../../../www/phpdaemon/Application_Base_DB.php	/^    protected $reconnect_attemts = 10;      \/\/попытки переподключиться к БД$/;"	v
+res	../../../www/phpdaemon/Application_Base_DB.php	/^        $res = $this->db->query($query);$/;"	v
+rows	../../../www/phpdaemon/Application_Base_DB.php	/^        $rows = array();$/;"	v
+run	../../../www/phpdaemon/Daemon.php	/^    public static function run(Application_Base $_appl)$/;"	f
+run	../../../www/phpdaemon/Thread_Child.php	/^    public function run()$/;"	f
+run	../../../www/phpdaemon/Thread_Master.php	/^    public function run()$/;"	f
+runmode	../../../www/phpdaemon/Daemon.php	/^    public static $runmode = FALSE;                     \/\/{start|stop|restart}$/;"	v
+runtime_function	../../../www/phpdaemon/Thread_Child.php	/^            $this->runtime_function = $_function;$/;"	v
+runtime_function	../../../www/phpdaemon/Thread_Child.php	/^    protected $runtime_function = FALSE;$/;"	v
+set_after_function	../../../www/phpdaemon/Thread_Child.php	/^    public function set_after_function($_function)$/;"	f
+set_application	../../../www/phpdaemon/Daemon.php	/^    public static function set_application(Application_Base $_appl)$/;"	f
+set_application	../../../www/phpdaemon/Thread_Child.php	/^    public function set_application($appl)$/;"	f
+set_application	../../../www/phpdaemon/Thread_Master.php	/^    public function set_application(Application_Base $_appl)$/;"	f
+set_before_function	../../../www/phpdaemon/Thread_Child.php	/^    public function set_before_function($_function)$/;"	f
+set_db_config	../../../www/phpdaemon/Application_Base_DB.php	/^    protected function set_db_config($_db_config)$/;"	f
+set_master_thread	../../../www/phpdaemon/Application_Base.php	/^    public function set_master_thread(Thread_Master $master)$/;"	f
+set_name	../../../www/phpdaemon/Daemon.php	/^    public static function set_name($_pname = null)$/;"	f
+set_runtime_function	../../../www/phpdaemon/Thread_Child.php	/^    public function set_runtime_function($_function)$/;"	f
+setproctitle	../../../www/phpdaemon/Thread.php	/^    public static function setproctitle($title)$/;"	f
+settings	../../../www/phpdaemon/Application_Base.php	/^    protected static $settings = array($/;"	v
+settings	../../../www/phpdaemon/Application_Example.php	/^	protected static $settings;$/;"	v
+settings	../../../www/phpdaemon/Daemon.php	/^    public static $settings = array(                    \/\/настройки демона$/;"	v
+settings	../../../www/phpdaemon/phpd.php	/^$settings = array('daemon' => array('sigwait_nano' => 1000000,'sigwait_sec' => 0,'pid_dir' => 'tmp\/','log_dir' => 'tmp\/') );$/;"	v
+show_help	../../../www/phpdaemon/Daemon.php	/^    public static function show_help()$/;"	f
+shutdown	../../../www/phpdaemon/Application_Base.php	/^    protected function shutdown()$/;"	f
+shutdown	../../../www/phpdaemon/Thread.php	/^        $this->shutdown = TRUE;$/;"	v
+shutdown	../../../www/phpdaemon/Thread.php	/^    public $shutdown = FALSE;                           \/\/флаг завершения работы$/;"	v
+shutdown	../../../www/phpdaemon/Thread.php	/^    public function shutdown()$/;"	f
+shutdown	../../../www/phpdaemon/Thread_Child.php	/^    public function shutdown()$/;"	f
+shutdown	../../../www/phpdaemon/Thread_Master.php	/^        $this->shutdown = TRUE;$/;"	v
+shutdown	../../../www/phpdaemon/Thread_Master.php	/^    public function shutdown($kill = FALSE)$/;"	f
+sigchld	../../../www/phpdaemon/Thread.php	/^    public function sigchld()$/;"	f
+sighandler	../../../www/phpdaemon/Thread.php	/^    public function sighandler($signo)$/;"	f
+siginfo	../../../www/phpdaemon/Thread.php	/^        $siginfo = NULL;$/;"	v
+sigint	../../../www/phpdaemon/Thread.php	/^    public function sigint()$/;"	f
+sigkill	../../../www/phpdaemon/Thread.php	/^    public function sigkill()$/;"	f
+signal	../../../www/phpdaemon/Thread_Collection.php	/^    public function signal($sig)$/;"	f
+signals	../../../www/phpdaemon/Thread.php	/^    public static $signals = array($/;"	v
+signalsno	../../../www/phpdaemon/Thread.php	/^    public static $signalsno = array($/;"	v
+signo	../../../www/phpdaemon/Thread.php	/^        $signo = pcntl_sigtimedwait(Thread::$signalsno, $siginfo, $sec, $nano);$/;"	v
+sigquit	../../../www/phpdaemon/Thread.php	/^    public function sigquit()$/;"	f
+sigterm	../../../www/phpdaemon/Thread.php	/^    public function sigterm()$/;"	f
+sigunknown	../../../www/phpdaemon/Thread.php	/^            $this->log('sighandler '.getmypid().' calling function sigunknown()',2);$/;"	f
+sigwait	../../../www/phpdaemon/Thread.php	/^    public function sigwait($sec = 0, $nano = 1)$/;"	f
+spawn_child	../../../www/phpdaemon/Application_Base.php	/^    public function spawn_child($_before_function = FALSE,$_runtime_function = FALSE,$_after_function = FALSE)$/;"	f
+spawn_child	../../../www/phpdaemon/Thread_Master.php	/^    public function spawn_child($_before_function = FALSE,$_runtime_function = FALSE,$_after_function = FALSE)$/;"	f
+spawncounter	../../../www/phpdaemon/Thread_Collection.php	/^    public $spawncounter = 0;$/;"	v
+start	../../../www/phpdaemon/Daemon.php	/^    public static function start(Application_Base $_appl)$/;"	f
+start	../../../www/phpdaemon/Thread.php	/^    public function start()$/;"	f
+start	../../../www/phpdaemon/Thread_Collection.php	/^    public function start()$/;"	f
+start	../../../www/phpdaemon/Thread_Master.php	/^    public function start()$/;"	f
+stop	../../../www/phpdaemon/Daemon.php	/^    public static function stop($mode = 1)$/;"	f
+stop	../../../www/phpdaemon/Thread.php	/^    public function stop($kill = FALSE)$/;"	f
+stop	../../../www/phpdaemon/Thread_Collection.php	/^    public function stop($kill = FALSE)$/;"	f
+thread	../../../www/phpdaemon/Thread_Master.php	/^            $thread = new Thread_Child;$/;"	v
+thread_name	../../../www/phpdaemon/Thread.php	/^    protected $thread_name = 'unnamed_thread';          \/\/имя процесса$/;"	v
+thread_name	../../../www/phpdaemon/Thread_Child.php	/^    protected $thread_name = 'child';$/;"	v
+thread_name	../../../www/phpdaemon/Thread_Master.php	/^    protected $thread_name = 'master';      \/\/имя процесса (используется для логирования)$/;"	v
+threads	../../../www/phpdaemon/Thread_Collection.php	/^    public $threads = array();$/;"	v
+waitPid	../../../www/phpdaemon/Thread.php	/^    public function waitPid()$/;"	f
+waitPid	../../../www/phpdaemon/Thread_Master.php	/^    public function waitPid()$/;"	f
+waitstatus	../../../www/phpdaemon/Thread_Collection.php	/^    public $waitstatus;$/;"	v
+x	../../../www/phpdaemon/Application_Example.php	/^		$x = 0;$/;"	v
